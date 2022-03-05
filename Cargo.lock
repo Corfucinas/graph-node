@@ -1406,7 +1406,7 @@ dependencies = [
  "hex",
  "http",
  "itertools",
- "jsonrpc-core 17.1.0",
+ "jsonrpc-core 18.0.0",
  "lazy_static",
  "mockall",
  "prost",
