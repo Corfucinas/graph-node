@@ -4,7 +4,7 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-port_check = "0.1.5"
+port_check = "0.2.1"
 anyhow = "1.0"
 futures = { version = "0.3", features = ["compat"] }
 graph = { path = "../graph" }
