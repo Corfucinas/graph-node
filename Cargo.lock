@@ -179,10 +179,10 @@ dependencies = [
  "serde",
  "sync_wrapper",
  "tokio",
- "tower 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower 0.4.12",
  "tower-http",
- "tower-layer 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-service 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower-layer 0.3.1",
+ "tower-service 0.3.1",
 ]
 
 [[package]]
@@ -493,7 +493,7 @@ dependencies = [
  "bitflags",
  "clap_derive",
  "clap_lex",
- "indexmap",
+ "indexmap 1.9.1",
  "once_cell",
  "strsim",
  "termcolor",
@@ -1163,6 +1163,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "equivalent"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
+
+[[package]]
 name = "errno"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1460,7 +1466,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e4075386626662786ddb0ec9081e7c7eeb1ba31951f447ca780ef9f5d568189"
 dependencies = [
  "fallible-iterator",
- "indexmap",
+ "indexmap 1.9.1",
  "stable_deref_trait",
 ]
 
@@ -1713,7 +1719,7 @@ dependencies = [
  "serde_json",
  "serde_yaml",
  "test-store",
- "tower 0.4.12 (git+https://github.com/tower-rs/tower.git)",
+ "tower 0.4.13",
  "tower-test",
  "uuid 0.8.2",
 ]
@@ -1731,7 +1737,7 @@ dependencies = [
  "graph-chain-ethereum",
  "graphql-parser",
  "graphql-tools",
- "indexmap",
+ "indexmap 1.9.1",
  "lazy_static",
  "parking_lot 0.12.1",
  "pretty_assertions",
@@ -2009,7 +2015,7 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http",
- "indexmap",
+ "indexmap 1.9.1",
  "slab",
  "tokio",
  "tokio-util 0.7.1",
@@ -2021,6 +2027,12 @@ name = "hashbrown"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db0d4cf898abf0081f964436dc980e96670a0f36863e4b83aaacdb65c9d7ccc3"
+
+[[package]]
+name = "hashbrown"
+version = "0.14.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1"
 
 [[package]]
 name = "hdrhistogram"
@@ -2177,7 +2189,7 @@ dependencies = [
  "pin-project-lite",
  "socket2",
  "tokio",
- "tower-service 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower-service 0.3.1",
  "tracing",
  "want",
 ]
@@ -2347,8 +2359,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "10a35a97730320ffe8e2d410b5d3b69279b98d2c14bdb8b70ea89ecf7888d41e"
 dependencies = [
  "autocfg",
- "hashbrown",
+ "hashbrown 0.12.1",
  "serde",
+]
+
+[[package]]
+name = "indexmap"
+version = "2.2.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "168fb715dda47215e360912c096649d23d58bf392ac62f73919e831745e40f26"
+dependencies = [
+ "equivalent",
+ "hashbrown 0.14.5",
 ]
 
 [[package]]
@@ -2924,7 +2946,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a5b3dd1c072ee7963717671d1ca129f1048fda25edea6b752bfc71ac8854170"
 dependencies = [
  "crc32fast",
- "indexmap",
+ "indexmap 1.9.1",
 ]
 
 [[package]]
@@ -3125,7 +3147,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6d5014253a1331579ce62aa67443b4a658c5e7dd03d4bc6d302b94474888143"
 dependencies = [
  "fixedbitset",
- "indexmap",
+ "indexmap 1.9.1",
 ]
 
 [[package]]
@@ -3302,7 +3324,7 @@ version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a03dfae8e64d4aa651415e2a4321f9f09f2e388a2f8bec36bed03bc22c0b687"
 dependencies = [
- "indexmap",
+ "indexmap 1.9.1",
  "take_mut",
 ]
 
@@ -3457,7 +3479,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9d39b14605eaa1f6a340aec7f320b34064feb26c93aec35d6a9a2272a8ddfa49"
 dependencies = [
  "anyhow",
- "indexmap",
+ "indexmap 1.9.1",
  "log",
  "protobuf 3.2.0",
  "protobuf-support",
@@ -4003,7 +4025,7 @@ version = "0.8.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "578a7433b776b56a35785ed5ce9a7e777ac0598aac5a6dd1b4b18a307c7fc71b"
 dependencies = [
- "indexmap",
+ "indexmap 1.9.1",
  "ryu",
  "serde",
  "yaml-rust",
@@ -4680,9 +4702,9 @@ dependencies = [
  "tokio-rustls",
  "tokio-stream",
  "tokio-util 0.7.1",
- "tower 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-layer 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-service 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower 0.4.12",
+ "tower-layer 0.3.1",
+ "tower-service 0.3.1",
  "tracing",
  "tracing-futures",
 ]
@@ -4708,33 +4730,34 @@ checksum = "9a89fd63ad6adf737582df5db40d286574513c69a11dac5214dc3b5603d6713e"
 dependencies = [
  "futures-core",
  "futures-util",
- "indexmap",
+ "indexmap 1.9.1",
  "pin-project",
  "pin-project-lite",
  "rand",
  "slab",
  "tokio",
  "tokio-util 0.7.1",
- "tower-layer 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-service 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower-layer 0.3.1",
+ "tower-service 0.3.1",
  "tracing",
 ]
 
 [[package]]
 name = "tower"
-version = "0.4.12"
-source = "git+https://github.com/tower-rs/tower.git#c9d84cde0c9a23e1d2d5b5ae7ae432629712658b"
+version = "0.4.13"
+source = "git+https://github.com/tower-rs/tower.git#74e925d2c8d079751db6fc14745972482f299d2f"
 dependencies = [
  "futures-core",
  "futures-util",
  "hdrhistogram",
- "indexmap",
+ "indexmap 2.2.6",
  "pin-project-lite",
  "slab",
+ "sync_wrapper",
  "tokio",
  "tokio-util 0.7.1",
- "tower-layer 0.3.1 (git+https://github.com/tower-rs/tower.git)",
- "tower-service 0.3.1 (git+https://github.com/tower-rs/tower.git)",
+ "tower-layer 0.3.2",
+ "tower-service 0.3.2",
  "tracing",
 ]
 
@@ -4752,9 +4775,9 @@ dependencies = [
  "http-body",
  "http-range-header",
  "pin-project-lite",
- "tower 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-layer 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "tower-service 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tower 0.4.12",
+ "tower-layer 0.3.1",
+ "tower-service 0.3.1",
 ]
 
 [[package]]
@@ -4765,8 +4788,8 @@ checksum = "343bc9466d3fe6b0f960ef45960509f84480bf4fd96f92901afe7ff3df9d3a62"
 
 [[package]]
 name = "tower-layer"
-version = "0.3.1"
-source = "git+https://github.com/tower-rs/tower.git#c9d84cde0c9a23e1d2d5b5ae7ae432629712658b"
+version = "0.3.2"
+source = "git+https://github.com/tower-rs/tower.git#74e925d2c8d079751db6fc14745972482f299d2f"
 
 [[package]]
 name = "tower-service"
@@ -4776,20 +4799,20 @@ checksum = "360dfd1d6d30e05fda32ace2c8c70e9c0a9da713275777f5a4dbb8a1893930c6"
 
 [[package]]
 name = "tower-service"
-version = "0.3.1"
-source = "git+https://github.com/tower-rs/tower.git#c9d84cde0c9a23e1d2d5b5ae7ae432629712658b"
+version = "0.3.2"
+source = "git+https://github.com/tower-rs/tower.git#74e925d2c8d079751db6fc14745972482f299d2f"
 
 [[package]]
 name = "tower-test"
 version = "0.4.0"
-source = "git+https://github.com/tower-rs/tower.git#c9d84cde0c9a23e1d2d5b5ae7ae432629712658b"
+source = "git+https://github.com/tower-rs/tower.git#74e925d2c8d079751db6fc14745972482f299d2f"
 dependencies = [
  "futures-util",
  "pin-project-lite",
  "tokio",
  "tokio-test",
- "tower-layer 0.3.1 (git+https://github.com/tower-rs/tower.git)",
- "tower-service 0.3.1 (git+https://github.com/tower-rs/tower.git)",
+ "tower-layer 0.3.2",
+ "tower-service 0.3.2",
 ]
 
 [[package]]
@@ -5141,7 +5164,7 @@ dependencies = [
  "bincode",
  "cfg-if 1.0.0",
  "cpp_demangle",
- "indexmap",
+ "indexmap 1.9.1",
  "lazy_static",
  "libc",
  "log",
@@ -5226,7 +5249,7 @@ dependencies = [
  "cranelift-entity",
  "cranelift-wasm",
  "gimli 0.24.0",
- "indexmap",
+ "indexmap 1.9.1",
  "log",
  "more-asserts",
  "serde",
@@ -5321,7 +5344,7 @@ dependencies = [
  "backtrace",
  "cc",
  "cfg-if 1.0.0",
- "indexmap",
+ "indexmap 1.9.1",
  "lazy_static",
  "libc",
  "log",
