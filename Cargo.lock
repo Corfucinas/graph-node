@@ -3234,7 +3234,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cea14ef9355e3beab063703aa9dab15afd25f0667c341310c1e5274bb1d0da18"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4684,7 +4684,7 @@ checksum = "4b0f83760fb341a774ed326568e19f5a863af4a952def8c39f9ab92fd95b88e5"
 dependencies = [
  "arbitrary",
  "equivalent",
- "hashbrown 0.16.1",
+ "hashbrown 0.15.2",
  "serde",
  "serde_core",
 ]
@@ -6773,7 +6773,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys 0.9.4",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -7506,7 +7506,6 @@ dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "psm",
- "windows-sys 0.52.0",
  "windows-sys 0.59.0",
 ]
 
@@ -8198,7 +8197,7 @@ dependencies = [
 [[package]]
 name = "tower"
 version = "0.5.3"
-source = "git+https://github.com/tower-rs/tower.git#35188ece3a5e05762c2eb64c675ef8c2d42e229a"
+source = "git+https://github.com/tower-rs/tower.git#8358ee712c4050650737e361fba242aa8c798ce2"
 dependencies = [
  "futures-core",
  "futures-util",
@@ -8241,7 +8240,7 @@ checksum = "121c2a6cda46980bb0fcd1647ffaf6cd3fc79a013de288782836f6df9c48780e"
 [[package]]
 name = "tower-layer"
 version = "0.3.3"
-source = "git+https://github.com/tower-rs/tower.git#35188ece3a5e05762c2eb64c675ef8c2d42e229a"
+source = "git+https://github.com/tower-rs/tower.git#8358ee712c4050650737e361fba242aa8c798ce2"
 
 [[package]]
 name = "tower-service"
@@ -8252,12 +8251,12 @@ checksum = "8df9b6e13f2d32c91b9bd719c00d1958837bc7dec474d94952798cc8e69eeec3"
 [[package]]
 name = "tower-service"
 version = "0.3.3"
-source = "git+https://github.com/tower-rs/tower.git#35188ece3a5e05762c2eb64c675ef8c2d42e229a"
+source = "git+https://github.com/tower-rs/tower.git#8358ee712c4050650737e361fba242aa8c798ce2"
 
 [[package]]
 name = "tower-test"
 version = "0.4.1"
-source = "git+https://github.com/tower-rs/tower.git#35188ece3a5e05762c2eb64c675ef8c2d42e229a"
+source = "git+https://github.com/tower-rs/tower.git#8358ee712c4050650737e361fba242aa8c798ce2"
 dependencies = [
  "pin-project-lite",
  "tokio",
