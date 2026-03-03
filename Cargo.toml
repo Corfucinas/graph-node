@@ -81,7 +81,7 @@ redis = { version = "1.0.4", features = [
     "tokio-comp",
 ] }
 regex = "1.5.4"
-reqwest = "0.12.23"
+reqwest = "0.13.2"
 semver = { version = "1", features = ["serde"] }
 serde = { version = "1.0.126", features = ["rc"] }
 serde_derive = "1.0.125"
