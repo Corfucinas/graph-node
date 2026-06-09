@@ -49,7 +49,7 @@ async-trait = "0.1.74"
 axum = "0.8.9"
 chrono = "0.4.44"
 bs58 = "0.5.1"
-clap = { version = "4.5.4", features = ["derive", "env", "wrap_help"] }
+clap = { version = "4.6.1", features = ["derive", "env", "wrap_help"] }
 clap_complete = "4"
 console = "0.16"
 derive_more = { version = "2.1.1", default-features = false }
