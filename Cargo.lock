@@ -3891,7 +3891,7 @@ dependencies = [
  "tower 0.5.2",
  "url",
  "walkdir",
- "wasmparser 0.118.2",
+ "wasmparser 0.252.0",
 ]
 
 [[package]]
@@ -3982,7 +3982,7 @@ dependencies = [
  "tonic-prost",
  "tonic-prost-build",
  "url",
- "wasmparser 0.118.2",
+ "wasmparser 0.252.0",
  "wiremock",
 ]
 
@@ -9209,16 +9209,6 @@ dependencies = [
 
 [[package]]
 name = "wasmparser"
-version = "0.118.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77f1154f1ab868e2a01d9834a805faca7bf8b50d041b4ca714d005d0dab1c50c"
-dependencies = [
- "indexmap 2.14.0",
- "semver 1.0.28",
-]
-
-[[package]]
-name = "wasmparser"
 version = "0.244.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "47b807c72e1bac69382b3a6fb3dbe8ea4c0ed87ff5629b8685ae6b9a611028fe"
@@ -9249,8 +9239,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3eb099dcadcde5be9eef55e3a337128efd4e44b4c93122487e4d2e4e1c6627c"
 dependencies = [
  "bitflags 2.11.1",
+ "hashbrown 0.17.0",
  "indexmap 2.14.0",
  "semver 1.0.28",
+ "serde",
 ]
 
 [[package]]
