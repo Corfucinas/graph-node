@@ -2978,9 +2978,9 @@ dependencies = [
 
 [[package]]
 name = "diesel"
-version = "2.3.9"
+version = "2.3.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9940fb8467a0a06312218ed384185cb8536aa10d8ec017d0ce7fad2c1bd882d5"
+checksum = "29fe29a87fb84c631ffb3ba21798c4b1f3a964701ba78f0dce4bf8668562ec88"
 dependencies = [
  "bigdecimal",
  "bitflags 2.11.1",
@@ -2989,7 +2989,7 @@ dependencies = [
  "diesel_derives",
  "downcast-rs",
  "itoa",
- "num-bigint 0.2.6",
+ "num-bigint 0.4.6",
  "num-integer",
  "num-traits",
  "pq-sys",
@@ -6466,7 +6466,7 @@ version = "0.14.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "343d3bd7056eda839b03204e68deff7d1b13aba7af2b2fd16890697274262ee7"
 dependencies = [
- "heck 0.5.0",
+ "heck 0.4.1",
  "itertools 0.10.5",
  "log",
  "multimap",
